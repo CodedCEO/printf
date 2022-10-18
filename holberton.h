@@ -1,9 +1,6 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 #include <stdarg.h>
-/**
- * fix it 
- */
 
 int _printf(const char *format, ...);
 int print_char(va_list ap);
@@ -32,12 +29,13 @@ char *_strdup(char *str);
 char *convert_base_pointer(unsigned long p);
 
 /**
- * struct flags_printf - struct conversion to function
+ * struct flags - struct conversion to function
  * @c: flag string
  * @f: pointer to func
+ * Description: struct that stores pointers to a
  */
 
-typedef struct flags_printf
+typedef struct flags
 {
 	char *c;
 	int (*f)(va_list);
