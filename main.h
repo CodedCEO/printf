@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -107,3 +108,48 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */
+=======
+#ifndef main_H
+#define main_H
+
+#include <stdarg.h>
+
+int _putchar(char c);
+
+int _printf(const char *format, ...);
+
+int print_char(va_list c);
+
+int print_string(va_list s);
+
+int print_int(va_list i);
+
+int print_dec(va_list d);
+
+int print_rev(va_list r);
+
+int print_bin(va_list b);
+
+int print_unsig(va_list u);
+
+int print_octal(va_list o);
+
+int print_x(va_list x);
+
+int print_X(va_list X);
+
+int print_rot13(va_list R);
+
+/**
+ * struct code_format - Struct format
+ * @sc: The specifiers
+ * @f: The function associated
+ */
+typedef struct code_format
+{
+	char *sc;
+	int (*f)(va_list);
+} code_f;
+
+#endif /* main_H */
+>>>>>>> 5bfcc0d710657110e8d304f13494f650bcbc0a4b
